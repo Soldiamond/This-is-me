@@ -1,0 +1,147 @@
+/* Reset default browser styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Body styles */
+body {
+    font-family: 'Roboto', sans-serif; /* Clean, modern font */
+    line-height: 1.6;
+    background-color: #f8f9fa; /* Light gray background */
+    padding: 20px;
+    text-align: center;
+    color: #343a40; /* Dark gray text */
+    animation: fadeIn 1s ease; /* Fade in effect */
+}
+
+/* Heading styles */
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #212529; /* Dark text */
+    text-transform: uppercase; /* Uppercase text */
+    letter-spacing: 1px; /* Spacing between letters */
+}
+
+/* Image styles */
+img {
+    display: block;
+    margin: 0 auto 20px;
+    max-width: 100%;
+    height: auto;
+    border-radius: 10%; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth scale and shadow on hover */
+}
+
+img:hover {
+    transform: scale(1.05); /* Slight scale on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Bigger shadow on hover */
+}
+
+/* Paragraph styles */
+p {
+    margin-bottom: 20px;
+    font-size: 1rem; /* Slightly larger font */
+    color: #495057; /* Medium gray text */
+}
+
+/* List styles */
+ul {
+    list-style-type: none;
+    padding-left: 0;
+    animation: fadeIn 1s ease; /* Fade in effect */
+}
+
+li {
+    margin-bottom: 10px;
+    opacity: 0; /* Initially hidden */
+    animation: fadeIn 1s ease forwards; /* Fade in and stay visible */
+    animation-delay: 0.3s; /* Delay animation */
+    background: #ffffff; /* White background */
+    padding: 10px;
+    border-radius: 5px; /* Rounded corners */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth scale and shadow on hover */
+}
+
+li:hover {
+    transform: scale(1.05); /* Slight scale on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Bigger shadow on hover */
+}
+
+/* Links styles */
+a {
+    color: #007bff; /* Blue link color */
+    text-decoration: none;
+    transition: color 0.3s ease, transform 0.3s ease; /* Smooth color and transform transition */
+}
+
+a:hover {
+    color: #0056b3; /* Darker blue on hover */
+    transform: scale(1.05); /* Slight scale up on hover */
+}
+
+/* Media queries for responsiveness */
+@media (min-width: 768px) {
+    /* Adjustments for tablets and larger screens */
+    h1 {
+        font-size: 3rem;
+    }
+
+    p {
+        font-size: 1.2rem;
+    }
+}
+
+/* Keyframes for animations */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Additional Styles for a Professional Look */
+h2, h3 {
+    margin-top: 40px;
+    color: #212529; /* Dark text */
+}
+
+h2 {
+    font-size: 2rem;
+    border-bottom: 2px solid #007bff; /* Bottom border for h2 */
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+h3 {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+li {
+    font-size: 1rem; /* Font size for list items */
+    margin-bottom: 15px; /* More space between list items */
+}
+
+/* Additional Animations */
+p, ul, li, a {
+    animation: fadeInUp 1s ease both; /* Fade in up effect */
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px); /* Move up */
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
